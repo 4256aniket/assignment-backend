@@ -19,11 +19,6 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded());
 
-// app.use((req, res, next) => {
-//   console.log("middleware", req.query);
-//   next();
-// });
-
 app.use("/api", componentRouter);
 
 const startServer = async () => {
